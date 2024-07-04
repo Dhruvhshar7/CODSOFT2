@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Quotes of the day"
+        android:textColor="#F44336"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quote_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:text="Your Quotes will be displayed here"
+        android:textColor="#F8F4F4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="serif"
+       android:text="...................." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quote_tv"
+        android:textSize="24sp"
+        android:id="@+id/author_tv"
+        tools:text="Author Name"
+        android:fontFamily="serif-monospace"
+        android:textColor="#AEAEAE"
+        android:layout_marginTop="16sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/white"
+        android:text="Share"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/author_tv"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/white"
+        android:text="Next"
+        android:textColor="@color/black"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="689dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
